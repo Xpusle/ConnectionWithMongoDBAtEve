@@ -42,7 +42,7 @@ public class EmployeeController {
 		return employeeservice.Upsert(employee);
 	}
 	
-	@DeleteMapping("/{Employeeid}")
+	@DeleteMapping("/{id}")
 	public String DeleteEmployeeRecordByid(@PathVariable Integer id) {
 		return employeeservice.DeleteEmployeeById(id);
 	}
